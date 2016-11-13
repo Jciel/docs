@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Webhook - Squid Fácil - Documentação</title>
+      
+      
+      
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Squid Fácil - Documentação">
+    <meta property="og:image" content="None/../img/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Squid Fácil - Documentação">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../img/logo.png">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+      <style>
+        body, input {
+          font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-light-green palette-accent-light-green">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Webhook
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/squidfacil" title="@squidfacil on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../img/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Squid Fácil - Documentação
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Credenciais" href="../credentials/">
+      Credenciais
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="API" href="../api/">
+      API
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Webhook" href="./">
+      Webhook
+    </a>
+    
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Introdução" href="#introducao">
+                Introdução
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Eventos" href="#eventos">
+                Eventos
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Assinatura" href="#assinatura">
+                Assinatura
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/squidfacil" target="_blank" title="@squidfacil on GitHub">
+                  @squidfacil on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+            <h1>Webhook</h1>
+          
+          <h2 id="introducao">Introdução</h2>
+<p>Webhook é uma forma de recebimento de informações quando um evento acontece. O webhook na prática, é a forma de receber informações entre dois sistemas de uma forma passiva.</p>
+<p>O webhook é uma maneira prática e eficiente que a Squid Fácil usa para fornecer a outras aplicações informações em tempo real.</p>
+<p>Enviaremos uma requisição HTTP POST para o URL cadastrada no painel da sua loja, com detalhes de todos os eventos inscritos. O formato de dados que você receberá é JSON.</p>
+<h2 id="eventos">Eventos</h2>
+<h3 id="estoque">Estoque</h3>
+<p>Serão enviadas todas alterações de estoque, exceto produtos com mais de 500 unidades em estoque.</p>
+<div class="code"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;stock&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;clientId&quot;</span><span class="p">:</span><span class="s2">&quot;6cd0aa38-0053-4dd3e-9029-1076e34D5d34&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="s2">&quot;SQUID3802&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;quantity&quot;</span><span class="p">:</span><span class="mi">400</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="preco">Preço</h3>
+<p>Serão enviadas todas alterações de preço.</p>
+<div class="code"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;price&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;clientId&quot;</span><span class="p">:</span><span class="s2">&quot;6cd0aa38-0053-4dd3e-9029-1076e34D5d34&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="s2">&quot;SQUID3802&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;oldPrice&quot;</span><span class="p">:</span><span class="mi">22151</span><span class="p">,</span>
+   <span class="nt">&quot;newPrice&quot;</span><span class="p">:</span><span class="mi">22473</span><span class="p">,</span>
+   <span class="nt">&quot;oldSuggestedPrice&quot;</span><span class="p">:</span><span class="mi">33990</span><span class="p">,</span>
+   <span class="nt">&quot;newSuggestedPrice&quot;</span><span class="p">:</span><span class="mi">33990</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="remessa-imediata">Remessa imediata</h3>
+<p>Serão enviadas notificações quando o produto estiver disponível ou não para remessa imediata.</p>
+<div class="code"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;immediate-shipment&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;clientId&quot;</span><span class="p">:</span><span class="s2">&quot;6cd0aa38-0053-4dd3e-9029-1076e34D5d34&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="s2">&quot;SQUID3802&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span><span class="kc">false</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="status-de-disponibilidade">Status de disponibilidade</h3>
+<p>Serão enviadas notificações quando o produto estiver disponível ou não para compra.</p>
+<div class="code"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;availability-status&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;clientId&quot;</span><span class="p">:</span><span class="s2">&quot;6cd0aa38-0053-4dd3e-9029-1076e34D5d34&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="s2">&quot;SQUID3802&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;available&quot;</span><span class="p">:</span><span class="kc">true</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="status-do-produto">Status do produto</h3>
+<p>Serão enviadas notificações quando o produto estiver ativo ou não no catálogo. Produtos inativos não aparecem no catálogo.</p>
+<div class="code"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;product-status&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;clientId&quot;</span><span class="p">:</span><span class="s2">&quot;6cd0aa38-0053-4dd3e-9029-1076e34D5d34&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;sku&quot;</span><span class="p">:</span><span class="s2">&quot;SQUID3799&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;active&quot;</span><span class="p">:</span><span class="kc">true</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="assinatura">Assinatura</h2>
+<p>Saiba como verificar a autenticidade de uma mensagem recebida.</p>
+<p>A requisição do webhook que vem da Squid Fácil possui um campo no cabeçalho (HEADER) <strong>X-Squid-Signature</strong> que contém um json web token (JWT) <a href="https://jwt.io/">https://jwt.io/</a> assinado pelo <strong><em>client_secret</em></strong> da sua loja.</p>
+<p>O algoritmo utilizado é <strong><em>HS256</em></strong>.</p>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 Squid Fácil &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../api/" title="API">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                API
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = '';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>

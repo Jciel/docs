@@ -1,0 +1,1269 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>API - Squid Fácil - Documentação</title>
+      
+      
+      
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Squid Fácil - Documentação">
+    <meta property="og:image" content="None/../img/logo.png">
+    <meta name="apple-mobile-web-app-title" content="Squid Fácil - Documentação">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+      <link rel="apple-touch-icon" href="../img/logo.png">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../assets/fonts/icon.eot?52m981');
+      	src: url('../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
+    
+      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
+      <style>
+        body, input {
+          font-family: 'Roboto', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class="palette-primary-light-green palette-accent-light-green">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        API
+      </div>
+    </div>
+    
+    
+      
+      <div class="button button-github" role="button" aria-label="GitHub">
+        <a href="https://github.com/squidfacil" title="@squidfacil on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
+      </div>
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+        <div class="logo">
+          <img src="../img/logo.png">
+        </div>
+      
+      <div class="name">
+        <strong>
+          Squid Fácil - Documentação
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Home" href="..">
+      Home
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Credenciais" href="../credentials/">
+      Credenciais
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="API" href="./">
+      API
+    </a>
+    
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="Introdução" href="#introducao">
+                Introdução
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Endpoint" href="#endpoint">
+                Endpoint
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Autenticação" href="#autenticacao">
+                Autenticação
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Produtos" href="#produtos">
+                Produtos
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Estoques" href="#estoques">
+                Estoques
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Pedidos" href="#pedidos">
+                Pedidos
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Webhook" href="../webhook/">
+      Webhook
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+          <hr>
+          <span class="section">The author</span>
+          <ul>
+            
+            
+              
+              <li>
+                <a href="https://github.com/squidfacil" target="_blank" title="@squidfacil on GitHub">
+                  @squidfacil on GitHub
+                </a>
+              </li>
+            
+          </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+            <h1>API</h1>
+          
+          <h2 id="introducao">Introdução</h2>
+<p>Bem-vindo! É através desta API que você irá integrar seu sistema ao nosso, todas operações que podem ser feitas com a API se encontra abaixo.</p>
+<p>Nossa API é <strong>RESTful</strong> e todas as respostas são em JSON. </p>
+<h2 id="endpoint">Endpoint</h2>
+<p>Todas as requisições são feitas no endpoint:</p>
+<p><strong>https://app.squidfacil.com.br/api</strong></p>
+<h2 id="autenticacao">Autenticação</h2>
+<p><img alt="Screenshot" src="../img/oauth.png" /></p>
+<p>Utilizamos o protocolo OAuth2 para autorização na API.</p>
+<h3 id="obter-o-token-de-acesso">Obter o token de acesso</h3>
+<p>Faça uma chamada <strong>POST</strong> em <strong>https://app.squidfacil.com.br/oauth</strong> usando as credenciais de integração da sua loja. No corpo de requisição, defina grant_type para <strong>client_credentials</strong>. Quando você executa o comando, a Squid Fácil gera e retorna um novo token de acesso (access token).</p>
+<h3 id="endpoint_1">Endpoint</h3>
+<p>POST https://app.squidfacil.com.br/oauth</p>
+<h3 id="parametros-form-data">Parâmetros (form-data)</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>grant_type</td>
+<td>Tipo de autenticação (client_credentials)</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>client_id</td>
+<td>Identificador do cliente (encontrado no painel da loja)</td>
+<td>string, required</td>
+</tr>
+<tr>
+<td>client_secret</td>
+<td>Senha (encontrado no painel da loja)</td>
+<td>string, required</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;access_token&quot;</span><span class="p">:</span> <span class="s2">&quot;735edb27e0995d9fe4296dd912e9ea1d0165806d&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;expires_in&quot;</span><span class="p">:</span> <span class="mi">3600</span><span class="p">,</span>
+  <span class="nt">&quot;token_type&quot;</span><span class="p">:</span> <span class="s2">&quot;Bearer&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;scope&quot;</span><span class="p">:</span> <span class="kc">null</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<p>Após receber o token de acesso, para autenticar-se é necesśario mandar o seguinte cabeçalho (HEADER) nas proximas requisições (token demonstrativo):</p>
+<p>Authorization: Bearer 735edb27e0995d9fe4296dd912e9ea1d0165806d</p>
+<h2 id="produtos">Produtos</h2>
+<h3 id="listar-todos-os-produtos">Listar todos os produtos</h3>
+<p>Neste endpoint, retornaremos todos os produtos fornecidos por algum fornecedor em nosso catálogo, estejam eles disponíveis atualmente, ou não.</p>
+<h3 id="endpoint_2">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/products</p>
+<h3 id="parametros">Parâmetros</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>Página dos produtos à serem retornados.</td>
+<td>number</td>
+</tr>
+<tr>
+<td>per_page</td>
+<td>Quantidade de produtos por página à serem retornados (Max:25).</td>
+<td>number</td>
+</tr>
+<tr>
+<td>updated_since</td>
+<td>Lista produtos que foram alterados desde a data informada.</td>
+<td>Y-m-d H:i:s</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json_1">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products?page=1&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;last&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products?page=1328&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products?page=2&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3540&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Azul Bi061 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacete-urban-tamanho-m-azul-bi061-atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">557</span><span class="p">,</span>
+        <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7899838806815&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;- Esporte: Proteção Individual\r\n- Marca: Atrio/Multilaser\r\n- Modelo: Bi061\r\n- Referência: Capacete Urban\r\n- Cor (Es): Azul\r\n- Gênero: Unissex\r\n- Garantia Do Fabricante: 03 Meses Contra Defeitos De Fabricação&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Azul Bi061 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;- Esporte: Proteção Individual\r\n- Marca: Atrio/Multilaser\r\n- Modelo: Bi061\r\n- Referência: Capacete Urban\r\n- Cor (Es): Azul\r\n- Gênero: Unissex\r\n- Garantia Do Fabricante: 03 Meses Contra Defeitos De Fabricação&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 01 Capacete&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">276</span><span class="p">,</span>
+          <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+          <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;suggestedRetailPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">7990</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;squidPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">3970</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;profitMargin&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">4020</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;55ad24154c7a6fdb5013ab00&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Para Bicicleta&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;para-bicicleta&quot;</span>
+              <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/categories/57684886aaaec43423598086&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/SQUID3540&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3539&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Branco/Azul Bi059 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacete-urban-tamanho-m-brancoazul-bi059-atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">672</span><span class="p">,</span>
+        <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7899838806792&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Branco/Azul Bi059 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Branco/Azul Bi059 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;- Esporte: Proteção Individual\r\n- Marca: Atrio/Multilaser\r\n- Modelo: Bi059\r\n- Referência: Capacete Urban\r\n- Cor (Es): Branco/Azul\r\n- Gênero: Unissex\r\n- Garantia Do Fabricante: 03 Meses Contra Defeitos De Fabricação&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 01 Capacete Urban Tamanho M Branco/Azul Bi059&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">270</span><span class="p">,</span>
+          <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+          <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">15</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;suggestedRetailPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">7990</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;squidPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">3970</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;profitMargin&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">4020</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;55ad24154c7a6fdb5013ab00&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Para Bicicleta&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;para-bicicleta&quot;</span>
+              <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/categories/57684886aaaec43423598086&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/SQUID3539&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;page_count&quot;</span><span class="p">:</span> <span class="mi">1328</span><span class="p">,</span>
+  <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nt">&quot;total_items&quot;</span><span class="p">:</span> <span class="mi">2655</span><span class="p">,</span>
+  <span class="nt">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="listar-todos-os-produtos-disponiveis">Listar todos os produtos disponíveis</h3>
+<p>Todos os produtos disponíveis para compra em nosso catálogo.</p>
+<h3 id="endpoint_3">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/products/available</p>
+<h3 id="parametros_1">Parâmetros</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>Página dos produtos à serem retornados.</td>
+<td>number</td>
+</tr>
+<tr>
+<td>per_page</td>
+<td>Quantidade de produtos por página à serem retornados (Max:25).</td>
+<td>number</td>
+</tr>
+<tr>
+<td>updated_since</td>
+<td>Lista produtos que foram alterados desde a data informada.</td>
+<td>Y-m-d H:i:s</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json_2">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/available?page=1&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/available&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;last&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/available?page=685&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/available?page=2&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3540&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Azul Bi061 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacete-urban-tamanho-m-azul-bi061-atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">557</span><span class="p">,</span>
+        <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7899838806815&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/capacete-urban-tamanho-m-azul-bi061-atrio1.png&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;- Esporte: Proteção Individual\r\n- Marca: Atrio/Multilaser\r\n- Modelo: Bi061\r\n- Referência: Capacete Urban\r\n- Cor (Es): Azul\r\n- Gênero: Unissex\r\n- Garantia Do Fabricante: 03 Meses Contra Defeitos De Fabricação&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Azul Bi061 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;- Esporte: Proteção Individual\r\n- Marca: Atrio/Multilaser\r\n- Modelo: Bi061\r\n- Referência: Capacete Urban\r\n- Cor (Es): Azul\r\n- Gênero: Unissex\r\n- Garantia Do Fabricante: 03 Meses Contra Defeitos De Fabricação&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 01 Capacete&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">276</span><span class="p">,</span>
+          <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">27</span><span class="p">,</span>
+          <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">2</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;suggestedRetailPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">7990</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;squidPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">3970</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;profitMargin&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">4020</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;55ad24154c7a6fdb5013ab00&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Para Bicicleta&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;para-bicicleta&quot;</span>
+              <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/categories/57684886aaaec43423598086&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/SQUID3540&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3539&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Branco/Azul Bi059 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacete-urban-tamanho-m-brancoazul-bi059-atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+        <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">672</span><span class="p">,</span>
+        <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7899838806792&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/capacete-urban-tamanho-m-brancoazul-bi059-atrio2.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/capacete-urban-tamanho-m-brancoazul-bi059-atrio1.png&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Branco/Azul Bi059 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacete Urban Tamanho M Branco/Azul Bi059 - Atrio&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;- Esporte: Proteção Individual\r\n- Marca: Atrio/Multilaser\r\n- Modelo: Bi059\r\n- Referência: Capacete Urban\r\n- Cor (Es): Branco/Azul\r\n- Gênero: Unissex\r\n- Garantia Do Fabricante: 03 Meses Contra Defeitos De Fabricação&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 01 Capacete Urban Tamanho M Branco/Azul Bi059&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">270</span><span class="p">,</span>
+          <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">28</span><span class="p">,</span>
+          <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">15</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;suggestedRetailPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">7990</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;squidPrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">3970</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;profitMargin&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">4020</span><span class="p">,</span>
+          <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57684886aaaec43423598086&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;capacetes&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;55ad24154c7a6fdb5013ab00&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Para Bicicleta&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;para-bicicleta&quot;</span>
+              <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/categories/57684886aaaec43423598086&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/SQUID3539&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;page_count&quot;</span><span class="p">:</span> <span class="mi">685</span><span class="p">,</span>
+  <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nt">&quot;total_items&quot;</span><span class="p">:</span> <span class="mi">1369</span><span class="p">,</span>
+  <span class="nt">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="listar-todos-os-produtos-indisponiveis">Listar todos os produtos indisponíveis</h3>
+<p>Todos os produtos que estão atualmente indisponíveis, fora de estoque ou desativados.</p>
+<h3 id="endpoint_4">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/products/unavailable</p>
+<h3 id="parametros_2">Parâmetros</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>Página dos produtos à serem retornados.</td>
+<td>number</td>
+</tr>
+<tr>
+<td>per_page</td>
+<td>Quantidade de produtos por página à serem retornados (Max:25).</td>
+<td>number</td>
+</tr>
+<tr>
+<td>updated_since</td>
+<td>Lista produtos que foram alterados desde a data informada.</td>
+<td>Y-m-d H:i:s</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json_3">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/unavailable?page=1&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/unavailable&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;last&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/unavailable?page=643&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/unavailable?page=2&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3439&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Super Massa Dinossauros Estrela&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;super-massa-dinossauros-estrela&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;575091c0aaaec420e57f5ce8&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos 04 Anos em Diante&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-04-anos-em-diante&quot;</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;575091f2aaaec44edc7f5d02&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos 04 Anos em Diante&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-04-anos-em-Diante&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Estrela&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7896027545180&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/super-massa-dinossauros-estrela2.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/super-massa-dinossauros-estrela1.png&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A fabriquinha Super Massa da Estrela é a oportunidade ideal para os seus filhos começarem a criar formas e descobrir novas cores. São formas divertidas e moldes diferentes para a criança criar as mais variadas brincadeiras. A Super Massa Dinossauros vem vários moldes de dinossauros para a criança criar os animais mais aterrorizantes! Também acompanham moldes para criar árvores e brincar junto ao cenário. Um momento de muita diversão que irá desenvolver a coordenação motora, a criatividade, a imaginação, a percepção das cores, espessuras e muito mais. Um brinquedo que une diversão e aprendizagem!&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Super Massa Dinossauros Estrela&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;- Marca: Estrela\r\n- Tipo de Brincadeira: Massa de modelar\r\n- Idade recomendada: 3 a 4 anos\r\n- Gênero: Unissex\r\n- Composição/Material: Plástico\r\n- Número de Participantes: 1 ou mais\r\n- Como Brincar: Utilizar a massa de modelar para moldar árvores e dinossauros preferidos&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 5 moldes de dinossauros\r\n- 1 molde do tronco de árvore\r\n- 1 molde para topo da árvore\r\n- 1 faca\r\n- 1 cenário A3\r\n- 3 potes Super Massa com 50g cada&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">470</span><span class="p">,</span>
+          <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+          <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">5</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;575091c0aaaec420e57f5ce8&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos 04 Anos em Diante&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-04-anos-em-diante&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;55a402ce7bec50e1413c809d&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos Meninos&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-meninos&quot;</span>
+              <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://app.squidfacil.com.br/api/categories/575091c0aaaec420e57f5ce8&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://app.squidfacil.com.br/api/products/SQUID3439&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3341&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Travesseiro Látex Lavável Sintético Eucaliptus p/fronhas 50x70&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x70&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57053f1d263a7b6f441adce1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Travesseiros&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;travesseiros&quot;</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Fibrasca&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+        <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+        <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7896630342169&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;94049000&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x702.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x702.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x702.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x702.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x702.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x703.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x703.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x703.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x703.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x703.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x704.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x704.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x704.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x704.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x704.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">},</span>
+          <span class="p">{</span>
+            <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x705.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+            <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x705.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x705.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x705.png&quot;</span><span class="p">,</span>
+              <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x705.png&quot;</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">],</span>
+        <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x701.png&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+          <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x701.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x701.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x701.png&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/travesseiro-latex-lavavel-sintetico-eucaliptus-pfronhas-50x701.png&quot;</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+        <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;Para um bom descanso, seja em casa ou durante uma viagem, o ideal é que se possa usufruir de travesseiros confortáveis, higiênicos e com altura que seja especifica para a cada necessidade pessoal e fisiológica.\r\nO Travesseiro Fibrasca Látex Sintético Eucaliptus, foi confeccionado com uma exclusiva tecnologia de moléculas abertas tornam possível a passagem da água por dentro da espuma de látex sintético, proporcionando mais praticidade ao lavar.\r\nPossui ainda orifícios de circulação do ar, que melhoram o frescor do produto, ajudando para prevenção de proliferação de ácaros, fungos e bactérias, visto que, seu revestimento em malha de algodão possui leve aroma de eucalipto em seu enchimento, proporcionando o melhor bem-estar ao deitar.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Travesseiro Látex Lavável Sintético Eucaliptus p/fronhas 50x70&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;**Características Gerais**\r\n- Moderno e sofisticado \r\n- Deixará sua residência harmoniosa e delicada \r\n- Produzido através de matérias primas de boa qualidade \r\n- Resistente e seguro \r\n- Nº de Fios: Não Possui\r\n- Formato: Convencional\r\n- Composição do revestimento: 100% Viscose\r\n- Composição do enchimento: 100% Poliuretano\r\n- Tecido: Malha\r\n- Antialérgico: sim\r\n- Antiácaro: sim\r\n- Antibactéria: sim\r\n- Antifungo: sim\r\n- Íons de Prata: não\r\n- Anatômico: não\r\n- Ortopédico: não\r\n- Lavável: sim\r\n- Indicado p/: dormir de lado,de barriga p/ cima,de bruços\r\n- Medidas: 50 x 70 cm\r\n- Cor: Branco\r\n\r\n**Cuidados com o Produto **\r\n- Produto integralmente lavável em máquina; \r\n- Não lavar acima de 40ºC; \r\n- Não alvejar, não branquear; \r\n- Secar de preferência na posição horizontal.&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 1 Travesseiro Fibrasca Látex Sintético Eucaliptus com Fibras Naturais em Malha 50 x 70 cm 1 Peça - Branco&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">600</span><span class="p">,</span>
+          <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">58</span><span class="p">,</span>
+          <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">12</span><span class="p">,</span>
+          <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">37</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;57053f1d263a7b6f441adce1&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Travesseiros&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;travesseiros&quot;</span><span class="p">,</span>
+            <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+              <span class="p">{</span>
+                <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;56bb5f99263a7b466d00f432&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Casa e Decoração&quot;</span><span class="p">,</span>
+                <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;casa-decoracao&quot;</span>
+              <span class="p">}</span>
+            <span class="p">],</span>
+            <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+            <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+              <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+                <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/categories/57053f1d263a7b6f441adce1&quot;</span>
+              <span class="p">}</span>
+            <span class="p">}</span>
+          <span class="p">}</span>
+        <span class="p">},</span>
+        <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+            <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/SQUID3341&quot;</span>
+          <span class="p">}</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;page_count&quot;</span><span class="p">:</span> <span class="mi">643</span><span class="p">,</span>
+  <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+  <span class="nt">&quot;total_items&quot;</span><span class="p">:</span> <span class="mi">1286</span><span class="p">,</span>
+  <span class="nt">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="buscar-um-produto">Buscar um produto</h3>
+<p>Retorna um produto.</p>
+<h3 id="endpoint_5">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/products/[SKU]</p>
+<h3 id="parametros_3">Parâmetros</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>sku</td>
+<td>SKU do produto.</td>
+<td>alphanumeric, required</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json_4">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID3439&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Super Massa Dinossauros Estrela&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;super-massa-dinossauros-estrela&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;categories&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;575091c0aaaec420e57f5ce8&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos 04 Anos em Diante&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-04-anos-em-diante&quot;</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;575091f2aaaec44edc7f5d02&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos 04 Anos em Diante&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-04-anos-em-Diante&quot;</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;brand&quot;</span><span class="p">:</span> <span class="s2">&quot;Estrela&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;warranty&quot;</span><span class="p">:</span> <span class="mi">90</span><span class="p">,</span>
+  <span class="nt">&quot;available&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;immediateShipment&quot;</span><span class="p">:</span> <span class="kc">false</span><span class="p">,</span>
+  <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+  <span class="nt">&quot;gtin&quot;</span><span class="p">:</span> <span class="s2">&quot;7896027545180&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;ncm&quot;</span><span class="p">:</span> <span class="s2">&quot;00000000&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;images&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+      <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/super-massa-dinossauros-estrela2.png&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/super-massa-dinossauros-estrela2.png&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;mainImage&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/original/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;title&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nt">&quot;types&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;small&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/small/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;medium&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/medium/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;large&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/large/super-massa-dinossauros-estrela1.png&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;extralarge&quot;</span><span class="p">:</span> <span class="s2">&quot;http://d27evgefuqvq7p.cloudfront.net/uploads/extralarge/super-massa-dinossauros-estrela1.png&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;attachments&quot;</span><span class="p">:</span> <span class="p">[],</span>
+  <span class="nt">&quot;description&quot;</span><span class="p">:</span> <span class="s2">&quot;A fabriquinha Super Massa da Estrela é a oportunidade ideal para os seus filhos começarem a criar formas e descobrir novas cores. São formas divertidas e moldes diferentes para a criança criar as mais variadas brincadeiras. A Super Massa Dinossauros vem vários moldes de dinossauros para a criança criar os animais mais aterrorizantes! Também acompanham moldes para criar árvores e brincar junto ao cenário. Um momento de muita diversão que irá desenvolver a coordenação motora, a criatividade, a imaginação, a percepção das cores, espessuras e muito mais. Um brinquedo que une diversão e aprendizagem!&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;shortDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;Super Massa Dinossauros Estrela&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;technicalDescription&quot;</span><span class="p">:</span> <span class="s2">&quot;- Marca: Estrela\r\n- Tipo de Brincadeira: Massa de modelar\r\n- Idade recomendada: 3 a 4 anos\r\n- Gênero: Unissex\r\n- Composição/Material: Plástico\r\n- Número de Participantes: 1 ou mais\r\n- Como Brincar: Utilizar a massa de modelar para moldar árvores e dinossauros preferidos&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;includedItems&quot;</span><span class="p">:</span> <span class="s2">&quot;- 5 moldes de dinossauros\r\n- 1 molde do tronco de árvore\r\n- 1 molde para topo da árvore\r\n- 1 faca\r\n- 1 cenário A3\r\n- 3 potes Super Massa com 50g cada&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;measurements&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;weight&quot;</span><span class="p">:</span> <span class="mi">470</span><span class="p">,</span>
+    <span class="nt">&quot;height&quot;</span><span class="p">:</span> <span class="mi">20</span><span class="p">,</span>
+    <span class="nt">&quot;length&quot;</span><span class="p">:</span> <span class="mi">30</span><span class="p">,</span>
+    <span class="nt">&quot;width&quot;</span><span class="p">:</span> <span class="mi">5</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;575091c0aaaec420e57f5ce8&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos 04 Anos em Diante&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-04-anos-em-diante&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;parents&quot;</span><span class="p">:</span> <span class="p">[</span>
+        <span class="p">{</span>
+          <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;55a402ce7bec50e1413c809d&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Brinquedos Meninos&quot;</span><span class="p">,</span>
+          <span class="nt">&quot;slug&quot;</span><span class="p">:</span> <span class="s2">&quot;brinquedos-meninos&quot;</span>
+        <span class="p">}</span>
+      <span class="p">],</span>
+      <span class="nt">&quot;children&quot;</span><span class="p">:</span> <span class="p">[],</span>
+      <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+          <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/categories/575091c0aaaec420e57f5ce8&quot;</span>
+        <span class="p">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/products/SQUID3439&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="estoques">Estoques</h2>
+<p>Lista o estoque de todos os produtos.</p>
+<h3 id="endpoint_6">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/stocks</p>
+<h3 id="parametros_4">Parâmetros</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>page</td>
+<td>Página dos estoques à serem retornados.</td>
+<td>number</td>
+</tr>
+<tr>
+<td>per_page</td>
+<td>Quantidade de produtos por página à serem retornados (Max:1000).</td>
+<td>number</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json_5">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/stocks?page=1&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;first&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/stocks&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;last&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/stocks?page=531&quot;</span>
+    <span class="p">},</span>
+    <span class="nt">&quot;next&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/stocks?page=2&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_embedded&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;stock&quot;</span><span class="p">:</span> <span class="p">[</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID11&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID13&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID14&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID15&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+      <span class="p">},</span>
+      <span class="p">{</span>
+        <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID16&quot;</span><span class="p">,</span>
+        <span class="nt">&quot;stockQuantity&quot;</span><span class="p">:</span> <span class="s2">&quot;0&quot;</span>
+      <span class="p">}</span>
+    <span class="p">]</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;page_count&quot;</span><span class="p">:</span> <span class="mi">531</span><span class="p">,</span>
+  <span class="nt">&quot;page_size&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+  <span class="nt">&quot;total_items&quot;</span><span class="p">:</span> <span class="mi">2655</span><span class="p">,</span>
+  <span class="nt">&quot;page&quot;</span><span class="p">:</span> <span class="mi">1</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h2 id="pedidos">Pedidos</h2>
+          <aside class="copyright" role="note">
+            
+              Copyright (c) 2016 Squid Fácil &ndash;
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../credentials/" title="Credenciais">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Credenciais
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../webhook/" title="Webhook">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Webhook
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '..';
+      var repo_id  = '';
+    </script>
+    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
