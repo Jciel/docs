@@ -1,0 +1,32 @@
+site_name: Squid Fácil - Documentação
+
+# Copyright
+copyright: 'Copyright (c) 2016 Squid Fácil'
+
+# Documentation and theme
+theme: material
+
+# Options
+extra:
+  logo: 'img/logo.png'
+  palette:
+    primary: 'light green'
+    accent: 'light green'
+  font:
+    text: 'Roboto'
+    code: 'Roboto Mono'
+  author:
+    github: 'squidfacil'
+  custom:
+    base_url: 'sad'
+
+markdown_extensions:
+  - codehilite(css_class=code)
+  - admonition
+
+pages:
+  - Home: 'index.md'
+  - 'Credenciais': 'credentials.md'
+  - 'API': 'api.md'
+  - Webhook: 'webhook.md'
+
