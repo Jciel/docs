@@ -1189,6 +1189,283 @@
 
 
 <h2 id="pedidos">Pedidos</h2>
+<h3 id="cadastrar-pedidos">Cadastrar pedidos</h3>
+<p>Neste endpoint é possível cadastrar um pedido no sistema da Squid Fácil. Você deve informar os dados do consumidor, lista de itens e as informações de entrega.</p>
+<h3 id="endpoint_7">Endpoint</h3>
+<p>POST https://app.squidfacil.com.br/api/orders</p>
+<h3 id="parametros-json">Parâmetros (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;consumer&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;consumerType&quot;</span><span class="p">:</span> <span class="s2">&quot;naturalPerson&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;João Silva&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;joao@example.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;(15) 3031-4002&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mobilePhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;(15) 9898-4002&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;cpfCnpj&quot;</span><span class="p">:</span> <span class="s2">&quot;26141951546&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;18015-075&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;R. Padre Pedro Domingos Paes&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="mi">109</span><span class="p">,</span>
+      <span class="nt">&quot;district&quot;</span><span class="p">:</span> <span class="s2">&quot;Vila Haro&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID1869&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;salePrice&quot;</span><span class="p">:</span> <span class="mi">5000</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;shippingMethod&quot;</span><span class="p">:</span> <span class="s2">&quot;CUSTOM_LABEL&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;customLabelUrl&quot;</span><span class="p">:</span> <span class="s2">&quot;https://minha_url_etiqueta.com&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;trackingCode&quot;</span><span class="p">:</span> <span class="s2">&quot;SW485376878BR&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="dados-variaveis">Dados variáveis</h3>
+<p><strong>Tipo do consumidor (consumerType):</strong> naturalPerson ou legalPerson</p>
+<p><strong>Situação do contribuinte (taxpayerSituation):</strong> 1 = Contribuinte ICMS, 2 = Contribuinte isento e 3 = Não contribuinte</p>
+<p><strong>Método de envio (shippingMethod):</strong></p>
+<p><strong>PAC:</strong> 41068</p>
+<p><strong>PAC_AR:</strong> 41068AR</p>
+<p><strong>SEDEX:</strong> 40096</p>
+<p><strong>SEDEX_AR:</strong> 40096AR</p>
+<p><strong>E_SEDEX:</strong> 81019</p>
+<p><strong>E_SEDEX_AR:</strong> 81019AR</p>
+<p><strong>Minha Etiqueta:</strong> CUSTOM_LABEL</p>
+<p><strong>Retirada Local:</strong> LOCAL_WITHDRAW</p>
+<h3 id="resposta-json_6">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;2587&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;28/03/2016 10:53:48&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;Submitted&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;subtotal&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">11668</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">11868</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;shipment&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;CUSTOM_LABEL&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Custom label&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;trackingCode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
+      <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;store&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Teste - SP&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="s2">&quot;Megafashion&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;12312312312&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mobilePhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;12922222222&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;Brasil&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;SP&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;18015062&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Sorocaba&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;district&quot;</span><span class="p">:</span> <span class="s2">&quot;Vila Haro&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;Rua Padre Pedro Domingos Paes&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;115&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;complement&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;consumer&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;cpf&quot;</span><span class="p">:</span> <span class="s2">&quot;26141951546&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;João Silva&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;joao@example.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phone&quot;</span><span class="p">:</span> <span class="s2">&quot;(15) 3031-4002&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mobilePhone&quot;</span><span class="p">:</span> <span class="s2">&quot;(15) 9898-4002&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;Brasil&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;SP&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;18015-075&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Sorocaba&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;district&quot;</span><span class="p">:</span> <span class="s2">&quot;Vila Haro&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;R. Padre Pedro Domingos Paes&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;109&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;complement&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Polidor Automotivo - Au605&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID1869&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">1</span><span class="p">,</span>
+      <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">11668</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;salePrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">5000</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/orders/2587&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="buscar-um-produto_1">Buscar um produto</h3>
+<p>Retorna um produto.</p>
+<h3 id="endpoint_8">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/orders/[order_id]</p>
+<h3 id="parametros_5">Parâmetros</h3>
+<table>
+<thead>
+<tr>
+<th>Nome</th>
+<th>Descrição</th>
+<th>Detalhes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>order_id</td>
+<td>Identificador do pedido.</td>
+<td>number, required</td>
+</tr>
+</tbody>
+</table>
+<h3 id="resposta-json_7">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;42&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;date&quot;</span><span class="p">:</span> <span class="s2">&quot;02/09/2015 15:34:46&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;status&quot;</span><span class="p">:</span> <span class="s2">&quot;Submitted&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;subtotal&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">43131</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">44961</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;shipment&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SEDEX&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sedex&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;trackingCode&quot;</span><span class="p">:</span> <span class="kc">null</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">1830</span><span class="p">,</span>
+      <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;store&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Bob&#39;s store&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;platform&quot;</span><span class="p">:</span> <span class="s2">&quot;Magento&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;url&quot;</span><span class="p">:</span> <span class="s2">&quot;teste&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;(47) 9645-1342&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mobilePhoneNumber&quot;</span><span class="p">:</span> <span class="s2">&quot;(47) 9645-1341&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;Brasil&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;SC&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;89027-450&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;Blumenau&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;district&quot;</span><span class="p">:</span> <span class="s2">&quot;Progresso&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;Rua Olga Hadlich&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;133&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;complement&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;consumer&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;cpf&quot;</span><span class="p">:</span> <span class="s2">&quot;05331700950&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;James Woodson&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;email&quot;</span><span class="p">:</span> <span class="s2">&quot;jameswoodson@hotmail.com&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;phone&quot;</span><span class="p">:</span> <span class="s2">&quot;5539309999&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;mobilePhone&quot;</span><span class="p">:</span> <span class="s2">&quot;55888888888&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;address&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;country&quot;</span><span class="p">:</span> <span class="s2">&quot;Brasil&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;state&quot;</span><span class="p">:</span> <span class="s2">&quot;SP&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;01311300&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;city&quot;</span><span class="p">:</span> <span class="s2">&quot;São Paulo&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;district&quot;</span><span class="p">:</span> <span class="s2">&quot;Bela Vista&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;street&quot;</span><span class="p">:</span> <span class="s2">&quot;Avenida Paulista&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;number&quot;</span><span class="p">:</span> <span class="s2">&quot;100&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;complement&quot;</span><span class="p">:</span> <span class="s2">&quot;&quot;</span>
+    <span class="p">}</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;product&quot;</span><span class="p">:</span> <span class="s2">&quot;Capa Clear View Galaxy S6 Edge Dourada &quot;</span><span class="p">,</span>
+      <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID1864&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
+      <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">14377</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+      <span class="p">},</span>
+      <span class="nt">&quot;salePrice&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">15600</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">],</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;http://app.squidfacil.com.br/api/orders/42&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="calcular-frete">Calcular frete</h3>
+<p>Você deve informar o código postal e uma lista de itens para receber as formas de entrega disponíveis.</p>
+<h3 id="endpoint_9">Endpoint</h3>
+<p>GET https://app.squidfacil.com.br/api/shipments</p>
+<h3 id="parametros-json_1">Parâmetros (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;postalCode&quot;</span><span class="p">:</span> <span class="s2">&quot;03110300&quot;</span><span class="p">,</span>
+  <span class="nt">&quot;items&quot;</span><span class="p">:</span> <span class="p">[</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID1234&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
+      <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">500</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+      <span class="p">}</span>
+    <span class="p">},</span>
+    <span class="p">{</span>
+      <span class="nt">&quot;sku&quot;</span><span class="p">:</span> <span class="s2">&quot;SQUID1348&quot;</span><span class="p">,</span>
+      <span class="nt">&quot;quantity&quot;</span><span class="p">:</span> <span class="mi">2</span><span class="p">,</span>
+      <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="p">{</span>
+        <span class="nt">&quot;amount&quot;</span><span class="p">:</span> <span class="mi">550</span><span class="p">,</span>
+        <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
+  <span class="p">]</span>
+<span class="p">}</span>
+</pre></div>
+
+
+<h3 id="resposta-json_8">Resposta (JSON)</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+  <span class="nt">&quot;0&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;SEDEX&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;Sedex&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">2248</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;1&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;id&quot;</span><span class="p">:</span> <span class="s2">&quot;PAC&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;PAC&quot;</span><span class="p">,</span>
+    <span class="nt">&quot;price&quot;</span><span class="p">:</span> <span class="mi">1514</span><span class="p">,</span>
+    <span class="nt">&quot;currency&quot;</span><span class="p">:</span> <span class="s2">&quot;BRL&quot;</span>
+  <span class="p">},</span>
+  <span class="nt">&quot;_links&quot;</span><span class="p">:</span> <span class="p">{</span>
+    <span class="nt">&quot;self&quot;</span><span class="p">:</span> <span class="p">{</span>
+      <span class="nt">&quot;href&quot;</span><span class="p">:</span> <span class="s2">&quot;https://app.squidfacil.com.br/api/shipments&quot;</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</pre></div>
           <aside class="copyright" role="note">
             
               Copyright (c) 2016 Squid Fácil &ndash;
