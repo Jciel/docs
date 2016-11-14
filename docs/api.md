@@ -876,3 +876,301 @@ GET https://app.squidfacil.com.br/api/stocks
 ```
 
 ## Pedidos
+
+### Cadastrar pedidos
+
+Neste endpoint é possível cadastrar um pedido no sistema da Squid Fácil. Você deve informar os dados do consumidor, lista de itens e as informações de entrega.
+
+### Endpoint
+
+POST https://app.squidfacil.com.br/api/orders
+
+### Parâmetros (JSON)
+
+```json
+{
+  "consumer": {
+    "consumerType": "naturalPerson",
+    "name": "João Silva",
+    "email": "joao@example.com",
+    "phoneNumber": "(15) 3031-4002",
+    "mobilePhoneNumber": "(15) 9898-4002",
+    "cpfCnpj": "26141951546",
+    "address": {
+      "postalCode": "18015-075",
+      "street": "R. Padre Pedro Domingos Paes",
+      "number": 109,
+      "district": "Vila Haro"
+    }
+  },
+  "items": [
+    {
+      "sku": "SQUID1869",
+      "quantity": 1,
+      "salePrice": 5000
+    }
+  ],
+  "shippingMethod": "CUSTOM_LABEL",
+  "customLabelUrl": "https://minha_url_etiqueta.com",
+  "trackingCode": "SW485376878BR"
+}
+```
+
+### Dados variáveis
+
+**Tipo do consumidor (consumerType):** naturalPerson ou legalPerson
+
+**Situação do contribuinte (taxpayerSituation):** 1 = Contribuinte ICMS, 2 = Contribuinte isento e 3 = Não contribuinte
+
+**Método de envio (shippingMethod):**
+
+**PAC:** 41068
+
+**PAC_AR:** 41068AR
+
+**SEDEX:** 40096
+
+**SEDEX_AR:** 40096AR
+
+**E_SEDEX:** 81019
+
+**E_SEDEX_AR:** 81019AR
+
+**Minha Etiqueta:** CUSTOM_LABEL
+
+**Retirada Local:** LOCAL_WITHDRAW
+
+### Resposta (JSON)
+
+```json
+{
+  "id": "2587",
+  "date": "28/03/2016 10:53:48",
+  "status": "Submitted",
+  "subtotal": {
+    "amount": 11668,
+    "currency": "BRL"
+  },
+  "total": {
+    "amount": 11868,
+    "currency": "BRL"
+  },
+  "shipment": {
+    "id": "CUSTOM_LABEL",
+    "name": "Custom label",
+    "trackingCode": null,
+    "price": {
+      "amount": 0,
+      "currency": "BRL"
+    }
+  },
+  "store": {
+    "name": "Teste - SP",
+    "platform": "Megafashion",
+    "url": "",
+    "phoneNumber": "12312312312",
+    "mobilePhoneNumber": "12922222222",
+    "address": {
+      "country": "Brasil",
+      "state": "SP",
+      "postalCode": "18015062",
+      "city": "Sorocaba",
+      "district": "Vila Haro",
+      "street": "Rua Padre Pedro Domingos Paes",
+      "number": "115",
+      "complement": ""
+    }
+  },
+  "consumer": {
+    "cpf": "26141951546",
+    "name": "João Silva",
+    "email": "joao@example.com",
+    "phone": "(15) 3031-4002",
+    "mobilePhone": "(15) 9898-4002",
+    "address": {
+      "country": "Brasil",
+      "state": "SP",
+      "postalCode": "18015-075",
+      "city": "Sorocaba",
+      "district": "Vila Haro",
+      "street": "R. Padre Pedro Domingos Paes",
+      "number": "109",
+      "complement": ""
+    }
+  },
+  "items": [
+    {
+      "product": "Polidor Automotivo - Au605",
+      "sku": "SQUID1869",
+      "quantity": 1,
+      "price": {
+        "amount": 11668,
+        "currency": "BRL"
+      },
+      "salePrice": {
+        "amount": 5000,
+        "currency": "BRL"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "https://app.squidfacil.com.br/api/orders/2587"
+    }
+  }
+}
+```
+
+### Buscar um produto
+
+Retorna um produto.
+
+### Endpoint
+
+GET https://app.squidfacil.com.br/api/orders/[order_id]
+
+### Parâmetros
+
+| Nome          | Descrição                                   | Detalhes               |
+| ------------- | ------------------------------------------- | ---------------------- |
+| order_id      | Identificador do pedido.                    | number, required       |
+
+
+### Resposta (JSON)
+
+```json
+{
+  "id": "42",
+  "date": "02/09/2015 15:34:46",
+  "status": "Submitted",
+  "subtotal": {
+    "amount": 43131,
+    "currency": "BRL"
+  },
+  "total": {
+    "amount": 44961,
+    "currency": "BRL"
+  },
+  "shipment": {
+    "id": "SEDEX",
+    "name": "Sedex",
+    "trackingCode": null,
+    "price": {
+      "amount": 1830,
+      "currency": "BRL"
+    }
+  },
+  "store": {
+    "name": "Bob's store",
+    "platform": "Magento",
+    "url": "teste",
+    "phoneNumber": "(47) 9645-1342",
+    "mobilePhoneNumber": "(47) 9645-1341",
+    "address": {
+      "country": "Brasil",
+      "state": "SC",
+      "postalCode": "89027-450",
+      "city": "Blumenau",
+      "district": "Progresso",
+      "street": "Rua Olga Hadlich",
+      "number": "133",
+      "complement": ""
+    }
+  },
+  "consumer": {
+    "cpf": "05331700950",
+    "name": "James Woodson",
+    "email": "jameswoodson@hotmail.com",
+    "phone": "5539309999",
+    "mobilePhone": "55888888888",
+    "address": {
+      "country": "Brasil",
+      "state": "SP",
+      "postalCode": "01311300",
+      "city": "São Paulo",
+      "district": "Bela Vista",
+      "street": "Avenida Paulista",
+      "number": "100",
+      "complement": ""
+    }
+  },
+  "items": [
+    {
+      "product": "Capa Clear View Galaxy S6 Edge Dourada ",
+      "sku": "SQUID1864",
+      "quantity": 3,
+      "price": {
+        "amount": 14377,
+        "currency": "BRL"
+      },
+      "salePrice": {
+        "amount": 15600,
+        "currency": "BRL"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "http://app.squidfacil.com.br/api/orders/42"
+    }
+  }
+}
+```
+
+### Calcular frete
+
+Você deve informar o código postal e uma lista de itens para receber as formas de entrega disponíveis.
+
+### Endpoint
+
+GET https://app.squidfacil.com.br/api/shipments
+
+### Parâmetros (JSON)
+
+```json
+{
+  "postalCode": "03110300",
+  "items": [
+    {
+      "sku": "SQUID1234",
+      "quantity": 5,
+      "price": {
+        "amount": 500,
+        "currency": "BRL"
+      }
+    },
+    {
+      "sku": "SQUID1348",
+      "quantity": 2,
+      "price": {
+        "amount": 550,
+        "currency": "BRL"
+      }
+    }
+  ]
+}
+```
+
+### Resposta (JSON)
+
+```json
+{
+  "0": {
+    "id": "SEDEX",
+    "name": "Sedex",
+    "price": 2248,
+    "currency": "BRL"
+  },
+  "1": {
+    "id": "PAC",
+    "name": "PAC",
+    "price": 1514,
+    "currency": "BRL"
+  },
+  "_links": {
+    "self": {
+      "href": "https://app.squidfacil.com.br/api/shipments"
+    }
+  }
+}
+```
