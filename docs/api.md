@@ -922,23 +922,18 @@ POST https://app.squidfacil.com.br/api/orders
 
 **Situação do contribuinte (taxpayerSituation):** 1 = Contribuinte ICMS, 2 = Contribuinte isento e 3 = Não contribuinte
 
-**Método de envio (shippingMethod):**
+### Métodos de envio (shippingMethod):
 
-**PAC:** 41068
-
-**PAC_AR:** 41068AR
-
-**SEDEX:** 40096
-
-**SEDEX_AR:** 40096AR
-
-**E_SEDEX:** 81019
-
-**E_SEDEX_AR:** 81019AR
-
-**Minha Etiqueta:** CUSTOM_LABEL
-
-**Retirada Local:** LOCAL_WITHDRAW
+| Nome           | Código         |
+| -------------- | -------------- |
+| PAC            | PAC            |
+| PAC + AR       | PAC_AR         |
+| SEDEX          | SEDEX          |
+| SEDEX + AR     | SEDEX_AR       |
+| e-SEDEX        | E_SEDEX        |
+| e-SEDEX + AR   | E_SEDEX_AR     |
+| Minha Etiqueta | CUSTOM_LABEL   |
+| Retirada Local | LOCAL_WITHDRAW |
 
 ### Resposta (JSON)
 
