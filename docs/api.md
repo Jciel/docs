@@ -1016,9 +1016,9 @@ POST https://app.squidfacil.com.br/api/orders
 }
 ```
 
-### Buscar um produto
+### Buscar um pedido
 
-Retorna um produto.
+Retorna um pedido.
 
 ### Endpoint
 
