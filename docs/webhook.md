@@ -76,6 +76,21 @@ Serão enviadas notificações quando o produto estiver ativo ou não no catálo
 }
 ```
 
+### Status do pedido
+
+Serão enviadas notificações quando o pedido mudar de status.
+ 
+```json
+{
+    "type":"order-status",
+    "clientId":"6cd0aa38-0053-4dd3e-9029-1076e34D5d34",
+    "orderId":"54616",
+    "status":"Labeling",
+    "motive":"",
+    "updatedAt":"2017-04-21 00:22:04"
+}
+```
+
 ## Assinatura
 
 Saiba como verificar a autenticidade de uma mensagem recebida.
