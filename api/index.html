@@ -1,260 +1,900 @@
+
 <!DOCTYPE html>
-<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
-<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
-<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
-<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
-<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+<html class="no-js">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="shortcut icon" href="../assets/images/favicon.png">
+      
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.5">
+    
     
       
         <title>API - Squid Fácil - Documentação</title>
       
+    
+    
+      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/application-b1a1975878.css">
       
+        <link rel="stylesheet" href="../assets/stylesheets/application-f78e5cb881.palette.css">
       
-      
-    
-    <meta property="og:url" content="None">
-    <meta property="og:title" content="Squid Fácil - Documentação">
-    <meta property="og:image" content="None/../img/logo.png">
-    <meta name="apple-mobile-web-app-title" content="Squid Fácil - Documentação">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    
-      <link rel="apple-touch-icon" href="../img/logo.png">
-    
-    
-    <link rel="shortcut icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
-    <link rel="icon" type="image/x-icon" href="../assets/images/favicon-e565ddfa3b.ico">
-    <style>
-      @font-face {
-      	font-family: 'Icon';
-      	src: url('../assets/fonts/icon.eot?52m981');
-      	src: url('../assets/fonts/icon.eot?#iefix52m981')
-               format('embedded-opentype'),
-      		   url('../assets/fonts/icon.woff?52m981')
-               format('woff'),
-      		   url('../assets/fonts/icon.ttf?52m981')
-               format('truetype'),
-      		   url('../assets/fonts/icon.svg?52m981#icon')
-               format('svg');
-      	font-weight: normal;
-      	font-style: normal;
-      }
-    </style>
-    <link rel="stylesheet" href="../assets/stylesheets/application-a422ff04cc.css">
-    
-      <link rel="stylesheet" href="../assets/stylesheets/palettes-05ab2406df.css">
     
     
       
+        
+        
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700|Roboto+Mono">
+        <style>body,input{font-family:"Roboto","Helvetica Neue",Helvetica,Arial,sans-serif}code,kbd,pre{font-family:"Roboto Mono","Courier New",Courier,monospace}</style>
       
-      
-      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,700|Roboto+Mono">
-      <style>
-        body, input {
-          font-family: 'Roboto', Helvetica, Arial, sans-serif;
-        }
-        pre, code {
-          font-family: 'Roboto Mono', 'Courier New', 'Courier', monospace;
-        }
-      </style>
+      <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     
     
-    <script src="../assets/javascripts/modernizr-4ab42b99fd.js"></script>
     
   </head>
   
   
   
-  <body class="palette-primary-light-green palette-accent-light-green">
-    
-    <div class="backdrop">
-      <div class="backdrop-paper"></div>
-    </div>
-    <input class="toggle" type="checkbox" id="toggle-drawer">
-    <input class="toggle" type="checkbox" id="toggle-search">
-    <label class="toggle-button overlay" for="toggle-drawer"></label>
-    <header class="header">
-      <nav aria-label="Header">
-  <div class="bar default">
-    <div class="button button-menu" role="button" aria-label="Menu">
-      <label class="toggle-button icon icon-menu" for="toggle-drawer">
-        <span></span>
-      </label>
-    </div>
-    <div class="stretch">
-      <div class="title">
-        
-          <span class="path">
-            
-          </span>
-        
-        API
-      </div>
-    </div>
-    
-    
-      
-      <div class="button button-github" role="button" aria-label="GitHub">
-        <a href="https://github.com/squidfacil" title="@squidfacil on GitHub" target="_blank" class="toggle-button icon icon-github"></a>
-      </div>
-    
-    <div class="button button-search" role="button" aria-label="Search">
-      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
-    </div>
-  </div>
-  <div class="bar search">
-    <div class="button button-close" role="button" aria-label="Close">
-      <label class="toggle-button icon icon-back" for="toggle-search"></label>
-    </div>
-    <div class="stretch">
-      <div class="field">
-        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
-      </div>
-    </div>
-    <div class="button button-reset" role="button" aria-label="Search">
-      <button class="toggle-button icon icon-close" id="reset-search"></button>
-    </div>
-  </div>
-</nav>
-    </header>
-    <main class="main">
-      
-      <div class="drawer">
-        <nav aria-label="Navigation">
   
-  <a href="/" class="project">
-    <div class="banner">
-      
-        <div class="logo">
-          <img src="../img/logo.png">
-        </div>
-      
-      <div class="name">
-        <strong>
-          Squid Fácil - Documentação
-          <span class="version">
-            
-          </span>
-        </strong>
+    <body data-md-color-primary="light-green" data-md-color-accent="light-green">
+  
+    <svg class="md-svg">
+      <defs>
+        
+        
+      </defs>
+    </svg>
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="drawer">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="search">
+    <label class="md-overlay" data-md-component="overlay" for="drawer"></label>
+    
+      <header class="md-header" data-md-component="header">
+  <nav class="md-header-nav md-grid">
+    <div class="md-flex">
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <a href=".." title="Squid Fácil - Documentação" class="md-logo md-header-nav__button">
+            <img src="../img/logo.png" width="24" height="24">
+          </a>
         
       </div>
-    </div>
-  </a>
-  <div class="scrollable">
-    <div class="wrapper">
-      
-      <div class="toc">
-        <ul>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
+      </div>
+      <div class="md-flex__cell md-flex__cell--stretch">
+        <span class="md-flex__ellipsis md-header-nav__title">
           
             
-  <li>
-    <a class="" title="Home" href="..">
+              
+            
+            API
+          
+        </span>
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        
+          <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
+          
+<div class="md-search" data-md-component="search">
+  <div class="md-search__overlay"></div>
+  <div class="md-search__inner">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <label class="md-icon md-search__icon" for="search"></label>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="result">
+          <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
+            Type to start searching
+          </div>
+          <ol class="md-search-result__list"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+        
+      </div>
+      <div class="md-flex__cell md-flex__cell--shrink">
+        <div class="md-header-nav__source">
+          
+        </div>
+      </div>
+    </div>
+  </nav>
+</header>
+    
+    <div class="md-container">
+      
+      
+      <main class="md-main">
+        <div class="md-main__inner md-grid" data-md-component="container">
+          
+            
+              <div class="md-sidebar md-sidebar--primary" data-md-component="navigation">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    <nav class="md-nav md-nav--primary" data-md-level="0">
+  <label class="md-nav__title md-nav__title--site" for="drawer">
+    
+      <i class="md-logo md-nav__button">
+        <img src="../img/logo.png">
+      </i>
+    
+    Squid Fácil - Documentação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href=".." title="Home" class="md-nav__link">
       Home
     </a>
-    
   </li>
 
-          
-            
-  <li>
-    <a class="" title="Credenciais" href="../credentials/">
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../credentials/" title="Credenciais" class="md-nav__link">
       Credenciais
     </a>
-    
   </li>
 
-          
-            
-  <li>
-    <a class="current" title="API" href="./">
+    
+      
+      
+      
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-toggle md-nav__toggle" data-md-toggle="toc" type="checkbox" id="toc">
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="toc">
+        API
+      </label>
+    
+    <a href="./" title="API" class="md-nav__link md-nav__link--active">
       API
     </a>
     
       
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
       
-        <ul>
-          
-            <li class="anchor">
-              <a title="Introdução" href="#introducao">
-                Introdução
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Endpoint" href="#endpoint">
-                Endpoint
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Autenticação" href="#autenticacao">
-                Autenticação
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Produtos" href="#produtos">
-                Produtos
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Estoques" href="#estoques">
-                Estoques
-              </a>
-            </li>
-          
-            <li class="anchor">
-              <a title="Pedidos" href="#pedidos">
-                Pedidos
-              </a>
-            </li>
-          
-        </ul>
+        <li class="md-nav__item">
+  <a href="#introducao" title="Introdução" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
       
+        <li class="md-nav__item">
+  <a href="#endpoint" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao" title="Autenticação" class="md-nav__link">
+    Autenticação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obter-o-token-de-acesso" title="Obter o token de acesso" class="md-nav__link">
+    Obter o token de acesso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_1" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros-form-data" title="Parâmetros (form-data)" class="md-nav__link">
+    Parâmetros (form-data)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#produtos" title="Produtos" class="md-nav__link">
+    Produtos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#listar-todos-os-produtos" title="Listar todos os produtos" class="md-nav__link">
+    Listar todos os produtos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_2" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_1" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-todos-os-produtos-disponiveis" title="Listar todos os produtos disponíveis" class="md-nav__link">
+    Listar todos os produtos disponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_3" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_1" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_2" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-todos-os-produtos-indisponiveis" title="Listar todos os produtos indisponíveis" class="md-nav__link">
+    Listar todos os produtos indisponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_4" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_2" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_3" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-um-produto" title="Buscar um produto" class="md-nav__link">
+    Buscar um produto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_5" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_3" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_4" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estoques" title="Estoques" class="md-nav__link">
+    Estoques
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_6" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_4" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_5" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pedidos" title="Pedidos" class="md-nav__link">
+    Pedidos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cadastrar-pedidos" title="Cadastrar pedidos" class="md-nav__link">
+    Cadastrar pedidos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_7" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros-json" title="Parâmetros (JSON)" class="md-nav__link">
+    Parâmetros (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dados-variaveis" title="Dados variáveis" class="md-nav__link">
+    Dados variáveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-de-envio-shippingmethod" title="Métodos de envio (shippingMethod):" class="md-nav__link">
+    Métodos de envio (shippingMethod):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_6" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-um-pedido" title="Buscar um pedido" class="md-nav__link">
+    Buscar um pedido
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_8" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_5" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_7" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calcular-frete" title="Calcular frete" class="md-nav__link">
+    Calcular frete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_9" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros-json_1" title="Parâmetros (JSON)" class="md-nav__link">
+    Parâmetros (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_8" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
     
   </li>
 
-          
-            
-  <li>
-    <a class="" title="Webhook" href="../webhook/">
+    
+      
+      
+      
+
+
+  <li class="md-nav__item">
+    <a href="../webhook/" title="Webhook" class="md-nav__link">
       Webhook
     </a>
-    
   </li>
 
-          
-        </ul>
-        
-          <hr>
-          <span class="section">The author</span>
-          <ul>
-            
-            
-              
-              <li>
-                <a href="https://github.com/squidfacil" target="_blank" title="@squidfacil on GitHub">
-                  @squidfacil on GitHub
-                </a>
-              </li>
-            
-          </ul>
-        
-      </div>
-    </div>
-  </div>
+    
+  </ul>
 </nav>
-      </div>
-      <article class="article">
-        <div class="wrapper">
+                  </div>
+                </div>
+              </div>
+            
+            
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="toc">
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+<nav class="md-nav md-nav--secondary">
+  
+  
+  
+    <label class="md-nav__title" for="toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#introducao" title="Introdução" class="md-nav__link">
+    Introdução
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#endpoint" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#autenticacao" title="Autenticação" class="md-nav__link">
+    Autenticação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#obter-o-token-de-acesso" title="Obter o token de acesso" class="md-nav__link">
+    Obter o token de acesso
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_1" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros-form-data" title="Parâmetros (form-data)" class="md-nav__link">
+    Parâmetros (form-data)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#produtos" title="Produtos" class="md-nav__link">
+    Produtos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#listar-todos-os-produtos" title="Listar todos os produtos" class="md-nav__link">
+    Listar todos os produtos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_2" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_1" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-todos-os-produtos-disponiveis" title="Listar todos os produtos disponíveis" class="md-nav__link">
+    Listar todos os produtos disponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_3" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_1" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_2" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#listar-todos-os-produtos-indisponiveis" title="Listar todos os produtos indisponíveis" class="md-nav__link">
+    Listar todos os produtos indisponíveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_4" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_2" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_3" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-um-produto" title="Buscar um produto" class="md-nav__link">
+    Buscar um produto
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_5" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_3" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_4" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#estoques" title="Estoques" class="md-nav__link">
+    Estoques
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_6" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_4" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_5" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pedidos" title="Pedidos" class="md-nav__link">
+    Pedidos
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#cadastrar-pedidos" title="Cadastrar pedidos" class="md-nav__link">
+    Cadastrar pedidos
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_7" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros-json" title="Parâmetros (JSON)" class="md-nav__link">
+    Parâmetros (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#dados-variaveis" title="Dados variáveis" class="md-nav__link">
+    Dados variáveis
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-de-envio-shippingmethod" title="Métodos de envio (shippingMethod):" class="md-nav__link">
+    Métodos de envio (shippingMethod):
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_6" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#buscar-um-pedido" title="Buscar um pedido" class="md-nav__link">
+    Buscar um pedido
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_8" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros_5" title="Parâmetros" class="md-nav__link">
+    Parâmetros
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_7" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#calcular-frete" title="Calcular frete" class="md-nav__link">
+    Calcular frete
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#endpoint_9" title="Endpoint" class="md-nav__link">
+    Endpoint
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#parametros-json_1" title="Parâmetros (JSON)" class="md-nav__link">
+    Parâmetros (JSON)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#resposta-json_8" title="Resposta (JSON)" class="md-nav__link">
+    Resposta (JSON)
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
           
-            <h1>API</h1>
-          
-          <h2 id="introducao">Introdução</h2>
+          <div class="md-content">
+            <article class="md-content__inner md-typeset">
+              
+                
+                
+                  <h1>API</h1>
+                
+                <h2 id="introducao">Introdução</h2>
 <p>Bem-vindo! É através desta API que você irá integrar seu sistema ao nosso, todas operações que podem ser feitas com a API se encontra abaixo.</p>
 <p>Nossa API é <strong>RESTful</strong> e todas as respostas são em JSON. </p>
 <h2 id="endpoint">Endpoint</h2>
@@ -1349,8 +1989,8 @@
 </pre></div>
 
 
-<h3 id="buscar-um-produto_1">Buscar um produto</h3>
-<p>Retorna um produto.</p>
+<h3 id="buscar-um-pedido">Buscar um pedido</h3>
+<p>Retorna um pedido.</p>
 <h3 id="endpoint_8">Endpoint</h3>
 <p>GET https://app.squidfacil.com.br/api/orders/[order_id]</p>
 <h3 id="parametros_5">Parâmetros</h3>
@@ -1500,81 +2140,85 @@
   <span class="p">}</span>
 <span class="p">}</span>
 </pre></div>
-          <aside class="copyright" role="note">
-            
-              Copyright (c) 2016 Squid Fácil &ndash;
-            
-            Documentation built with
-            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
-            using the
-            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
-              Material
-            </a>
-            theme.
-          </aside>
-          
-            <footer class="footer">
+                
+                  
+                
               
-  <nav class="pagination" aria-label="Footer">
-    <div class="previous">
+              
+                
+              
+            </article>
+          </div>
+        </div>
+      </main>
       
-        <a href="../credentials/" title="Credenciais">
-          <span class="direction">
-            Previous
-          </span>
-          <div class="page">
-            <div class="button button-previous" role="button" aria-label="Previous">
-              <i class="icon icon-back"></i>
+        
+<footer class="md-footer">
+  
+    <div class="md-footer-nav">
+      <nav class="md-footer-nav__inner md-grid">
+        
+          <a href="../credentials/" title="Credenciais" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
-            <div class="stretch">
-              <div class="title">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Previous
+                </span>
                 Credenciais
-              </div>
+              </span>
             </div>
-          </div>
-        </a>
-      
-    </div>
-    <div class="next">
-      
-        <a href="../webhook/" title="Webhook">
-          <span class="direction">
-            Next
-          </span>
-          <div class="page">
-            <div class="stretch">
-              <div class="title">
+          </a>
+        
+        
+          <a href="../webhook/" title="Webhook" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+            <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
+              <span class="md-flex__ellipsis">
+                <span class="md-footer-nav__direction">
+                  Next
+                </span>
                 Webhook
-              </div>
+              </span>
             </div>
-            <div class="button button-next" role="button" aria-label="Next">
-              <i class="icon icon-forward"></i>
+            <div class="md-flex__cell md-flex__cell--shrink">
+              <i class="md-icon md-icon--arrow-forward md-footer-nav__button"></i>
             </div>
+          </a>
+        
+      </nav>
+    </div>
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-footer-copyright">
+        
+          <div class="md-footer-copyright__highlight">
+            Copyright (c) 2016 Squid Fácil
           </div>
-        </a>
+        
+        powered by
+        <a href="http://www.mkdocs.org" title="MkDocs">MkDocs</a>
+        and
+        <a href="http://squidfunk.github.io/mkdocs-material/" title="Material for MkDocs">
+          Material for MkDocs</a>
+      </div>
+      
+        
       
     </div>
-  </nav>
-
-            </footer>
-          
-        </div>
-      </article>
-      <div class="results" role="status" aria-live="polite">
-        <div class="scrollable">
-          <div class="wrapper">
-            <div class="meta"></div>
-            <div class="list"></div>
-          </div>
-        </div>
-      </div>
-    </main>
-    <script>
-      var base_url = '..';
-      var repo_id  = '';
-    </script>
-    <script src="../assets/javascripts/application-997097ee0c.js"></script>
+  </div>
+</footer>
+      
+    </div>
     
+      <script src="../assets/javascripts/application-ad1183cb07.js"></script>
+      <script>app.initialize({url:{base:".."}})</script>
+      
+    
+    
+      
     
   </body>
 </html>
