@@ -1112,7 +1112,7 @@ GET https://app.squidfacil.com.br/api/orders/[order_id]
 }
 ```
 
-### Calcular frete
+## Calcular frete
 
 Você deve informar o código postal e uma lista de itens para receber as formas de entrega disponíveis.
 
