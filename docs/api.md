@@ -1169,3 +1169,105 @@ GET https://app.squidfacil.com.br/api/shipments
   }
 }
 ```
+
+## Loja
+
+Neste endpoint, retornaremos o dados da sua loja.
+
+### Endpoint
+
+GET https://app.squidfacil.com.br/api/stores
+
+### Resposta (JSON)
+
+```json
+{
+  "_links": {
+    "self": {
+      "href": "https://app.squidfacil.com.br/api/stores"
+    }
+  },
+  "_embedded": {
+    "store": [
+      {
+        "id": "4270808f-d1d3-4314-a7e4-6c6b590c7a26",
+        "name": "Teste - MG",
+        "type": "CompanyStore",
+        "status": "Approved",
+        "platform": "Outra plataforma",
+        "url": "",
+        "address": {
+          "street": "Rua oito",
+          "number": "100",
+          "complement": "",
+          "district": "Centro",
+          "city": "Campestre",
+          "state": "MG",
+          "country": "Brasil",
+          "postalCode": "37730970"
+        },
+        "contact": {
+          "phoneNumber": "0000000",
+          "mobilePhoneNumber": "0000000"
+        },
+        "taxData": {
+          "responsibleName": "João",
+          "cnpj": "12689176000181",
+          "taxpayerSituation": 1,
+          "ie": "149.441.630/4749"
+        },
+        "webhook": {
+          "isActive": true,
+          "payloadUrl": "http://minha-url.com",
+          "events": [
+            "stock",
+            "immediate-shipment",
+            "availability-status"
+          ]
+        },
+        "_links": {
+          "self": {
+            "href": "https://app.squidfacil.com.br/api/stores/4270808f-d1d3-4314-a7e4-6c6b590c7a26"
+          }
+        }
+      }
+    ]
+  },
+  "total_items": 1
+}
+```
+
+## Atualizar loja
+
+No momento só é possível atualizar os dados do webhook.
+
+### Endpoint
+
+PATCH https://app.squidfacil.com.br/api/stores/[store_id]
+
+### Parâmetros (JSON)
+
+```json
+{
+	"webhook": {
+      "isActive": true,
+      "payloadUrl": "http://minha-url.com",
+      "events": [
+          "stock",
+          "immediate-shipment",
+          "availability-status"
+      ]
+    }
+}
+```
+
+### Eventos disponíveis
+
+| Nome                      | Código              |
+| ------------------------- | ------------------- |
+| Estoque                   | stock               |
+| Preço                     | price               |
+| Remessa imediata          | immediate-shipment  |
+| Status de disponibilidade | availability-status |
+| Status do produto         | product-status      |
+| Status do pedido          | order-status        |
