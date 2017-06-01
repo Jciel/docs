@@ -922,7 +922,7 @@ POST https://app.squidfacil.com.br/api/orders
 
 **Situação do contribuinte (taxpayerSituation):** 1 = Contribuinte ICMS, 2 = Contribuinte isento e 3 = Não contribuinte
 
-### Métodos de envio (shippingMethod):
+## Métodos de envio (shippingMethod):
 
 | Nome           | Código         |
 | -------------- | -------------- |
