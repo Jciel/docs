@@ -1237,15 +1237,16 @@ GET https://app.squidfacil.com.br/api/stores
 }
 ```
 
-## Atualizar loja
+## Webhook
 
-No momento só é possível atualizar os dados do webhook.
+Neste endpoint é possível cadastrar, atualizar e verificar a propriedade da URL.
 
 ### Endpoint
 
 PATCH https://app.squidfacil.com.br/api/stores/[store_id]
 
 ### Parâmetros (JSON)
+Cadastrar ou atualizar
 
 ```json
 {
@@ -1271,3 +1272,22 @@ PATCH https://app.squidfacil.com.br/api/stores/[store_id]
 | Status de disponibilidade | availability-status |
 | Status do produto         | product-status      |
 | Status do pedido          | order-status        |
+
+Atenção: Sempre que você alterar a URL, vamos enviar uma requisição POST com um código de verificação para a URL. A verificação informa a Squid Fácil que você é um proprietário autorizado da URL informada.
+Veja abaixo como verificar sua URL.
+
+### Endpoint
+
+PATCH https://app.squidfacil.com.br/api/stores/[store_id]
+
+### Parâmetros (JSON)
+
+Verificar a propriedade da URL, utilize o código de verificação recebido via POST. [Veja um exemplo de código de verificação recebido via POST.](webhook.md#codigo-de-verificacao)
+
+```json
+{
+    "webhook": {
+      "verificationCode": "4688163e-258f-43b0-9c18-2b009afd376e"
+    }
+}
+```
