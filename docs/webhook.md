@@ -6,6 +6,22 @@ O webhook é uma maneira prática e eficiente que a Squid Fácil usa para fornec
 
 Enviaremos uma requisição HTTP POST para o URL cadastrada no painel da sua loja, com detalhes de todos os eventos inscritos. O formato de dados que você receberá é JSON.
 
+## Código de verificação
+
+Sempre que você alterar a URL, vamos enviar uma requisição POST com um código de verificação para a URL. A verificação informa a Squid Fácil que você é um proprietário autorizado da URL informada.
+
+[Veja como gerenciar as configurações de Webhook via API.](api.md#webhook)
+
+### Código de verificação
+
+```json
+{
+   "type":"webhook-verification-code",
+   "clientId":"6cd0aa38-0053-4dd3e-9029-1076e34D5d34",
+   "verificationCode":"3d876131-19eb-401a-9c75-c1c7e96cdes7"
+}
+```
+
 ## Eventos
 
 ### Estoque
