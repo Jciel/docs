@@ -1,17 +1,18 @@
 
 <!DOCTYPE html>
-<html class="no-js">
+<html lang="en" class="no-js">
   <head>
     
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
+      <meta http-equiv="x-ua-compatible" content="ie=edge">
       
       
       
       
         <link rel="shortcut icon" href="../assets/images/favicon.png">
       
-      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.5.5">
+      <meta name="generator" content="mkdocs-0.16.3, mkdocs-material-1.10.0">
     
     
       
@@ -19,12 +20,12 @@
       
     
     
-      <script src="../assets/javascripts/modernizr-56ade86843.js"></script>
+      <script src="../assets/javascripts/modernizr-e826f8942a.js"></script>
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/application-b1a1975878.css">
+      <link rel="stylesheet" href="../assets/stylesheets/application-b6a6d08807.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/application-f78e5cb881.palette.css">
+        <link rel="stylesheet" href="../assets/stylesheets/application-23f75ab9c7.palette.css">
       
     
     
@@ -60,11 +61,13 @@
   <nav class="md-header-nav md-grid">
     <div class="md-flex">
       <div class="md-flex__cell md-flex__cell--shrink">
-        
-          <a href=".." title="Squid Fácil - Documentação" class="md-logo md-header-nav__button">
-            <img src="../img/logo.png" width="24" height="24">
-          </a>
-        
+        <a href=".." title="Squid Fácil - Documentação" class="md-header-nav__button md-logo">
+          
+            
+              <img src="../img/logo.png" width="24" height="24">
+            
+          
+        </a>
       </div>
       <div class="md-flex__cell md-flex__cell--shrink">
         <label class="md-icon md-icon--menu md-header-nav__button" for="drawer"></label>
@@ -83,17 +86,17 @@
         
           <label class="md-icon md-icon--search md-header-nav__button" for="search"></label>
           
-<div class="md-search" data-md-component="search">
-  <div class="md-search__overlay"></div>
+<div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="search"></label>
   <div class="md-search__inner">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" required placeholder="Search" accesskey="s" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
+      <input type="text" class="md-search__input" name="query" required placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="query">
       <label class="md-icon md-search__icon" for="search"></label>
-      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">close</button>
+      <button type="reset" class="md-icon md-search__icon" data-md-component="reset">&#xE5CD;</button>
     </form>
     <div class="md-search__output">
       <div class="md-search__scrollwrap" data-md-scrollfix>
-        <div class="md-search-result" data-md-component="result">
+        <div class="md-search-result" data-md-component="result" data-md-lang-search="" data-md-lang-tokenizer="[\s\-]+">
           <div class="md-search-result__meta" data-md-lang-result-none="No matching documents" data-md-lang-result-one="1 matching document" data-md-lang-result-other="# matching documents">
             Type to start searching
           </div>
@@ -105,11 +108,7 @@
 </div>
         
       </div>
-      <div class="md-flex__cell md-flex__cell--shrink">
-        <div class="md-header-nav__source">
-          
-        </div>
-      </div>
+      
     </div>
   </nav>
 </header>
@@ -126,11 +125,13 @@
                   <div class="md-sidebar__inner">
                     <nav class="md-nav md-nav--primary" data-md-level="0">
   <label class="md-nav__title md-nav__title--site" for="drawer">
-    
-      <i class="md-logo md-nav__button">
-        <img src="../img/logo.png">
-      </i>
-    
+    <div class="md-nav__button md-logo">
+      
+        
+          <img src="../img/logo.png">
+        
+      
+    </div>
     Squid Fácil - Documentação
   </label>
   
@@ -204,6 +205,26 @@
   <a href="#introducao" title="Introdução" class="md-nav__link">
     Introdução
   </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#codigo-de-verificacao" title="Código de verificação" class="md-nav__link">
+    Código de verificação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codigo-de-verificacao_1" title="Código de verificação" class="md-nav__link">
+    Código de verificação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -304,6 +325,26 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#codigo-de-verificacao" title="Código de verificação" class="md-nav__link">
+    Código de verificação
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#codigo-de-verificacao_1" title="Código de verificação" class="md-nav__link">
+    Código de verificação
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#eventos" title="Eventos" class="md-nav__link">
     Eventos
   </a>
@@ -386,6 +427,18 @@
 <p>Webhook é uma forma de recebimento de informações quando um evento acontece. O webhook na prática, é a forma de receber informações entre dois sistemas de uma forma passiva.</p>
 <p>O webhook é uma maneira prática e eficiente que a Squid Fácil usa para fornecer a outras aplicações informações em tempo real.</p>
 <p>Enviaremos uma requisição HTTP POST para o URL cadastrada no painel da sua loja, com detalhes de todos os eventos inscritos. O formato de dados que você receberá é JSON.</p>
+<h2 id="codigo-de-verificacao">Código de verificação</h2>
+<p>Sempre que você alterar a URL, vamos enviar uma requisição POST com um código de verificação para a URL. A verificação informa a Squid Fácil que você é um proprietário autorizado da URL informada.</p>
+<p><a href="../api/#webhook">Veja como gerenciar as configurações de Webhook via API.</a></p>
+<h3 id="codigo-de-verificacao_1">Código de verificação</h3>
+<div class="code"><pre><span></span><span class="p">{</span>
+   <span class="nt">&quot;type&quot;</span><span class="p">:</span><span class="s2">&quot;webhook-verification-code&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;clientId&quot;</span><span class="p">:</span><span class="s2">&quot;6cd0aa38-0053-4dd3e-9029-1076e34D5d34&quot;</span><span class="p">,</span>
+   <span class="nt">&quot;verificationCode&quot;</span><span class="p">:</span><span class="s2">&quot;3d876131-19eb-401a-9c75-c1c7e96cdes7&quot;</span>
+<span class="p">}</span>
+</pre></div>
+
+
 <h2 id="eventos">Eventos</h2>
 <h3 id="estoque">Estoque</h3>
 <p>Serão enviadas todas alterações de estoque, exceto produtos com mais de 500 unidades em estoque.</p>
@@ -521,7 +574,9 @@
       
     </div>
     
-      <script src="../assets/javascripts/application-ad1183cb07.js"></script>
+      <script src="../assets/javascripts/application-f3ab9e5ff8.js"></script>
+      
+      
       <script>app.initialize({url:{base:".."}})</script>
       
     
