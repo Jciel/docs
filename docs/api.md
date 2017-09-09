@@ -1118,7 +1118,7 @@ Você deve informar o código postal e uma lista de itens para receber as formas
 
 ### Endpoint
 
-GET https://app.squidfacil.com.br/api/shipments
+POST https://app.squidfacil.com.br/api/shipments
 
 ### Parâmetros (JSON)
 
