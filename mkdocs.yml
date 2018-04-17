@@ -1,13 +1,11 @@
 site_name: Squid Fácil - Documentação
 
 # Copyright
-copyright: 'Copyright (c) 2016 Squid Fácil'
+copyright: 'Copyright (c) 2018 Squid Fácil'
 
 # Documentation and theme
-theme: material
-
-# Options
-extra:
+theme: 
+  name: 'material'
   logo: 'img/logo.png'
   palette:
     primary: 'light green'
@@ -29,4 +27,3 @@ pages:
   - 'Credenciais': 'credentials.md'
   - 'API': 'api.md'
   - Webhook: 'webhook.md'
-
