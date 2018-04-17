@@ -932,6 +932,8 @@ POST https://app.squidfacil.com.br/api/orders
 | SEDEX + AR     | SEDEX_AR       |
 | e-SEDEX        | E_SEDEX        |
 | e-SEDEX + AR   | E_SEDEX_AR     |
+| Jamef          | JAMEF          |
+| Jadlog         | JADLOG         |
 | Minha Etiqueta | CUSTOM_LABEL   |
 | Retirada Local | LOCAL_WITHDRAW |
 
