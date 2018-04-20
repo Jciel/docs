@@ -933,6 +933,7 @@ POST https://app.squidfacil.com.br/api/orders
 | Available for withdrawal (Disponível para retirada)       | Pedido com retirada local disponível para o cliente retirar.    |
 | Awaiting item (Aguardando item)                           | Troca solicitada, aguardando produto do cliente.                |
 | Awaiting exchange (Aguardando troca)                      | Produto a ser trocado chegou na Squid Fácil, processando troca. |
+
 \* Somente pedidos de remessa normal (que não são remessa imediata) passam por esses statu
 
 
