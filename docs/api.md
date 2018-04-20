@@ -943,18 +943,19 @@ POST https://app.squidfacil.com.br/api/orders
 
 ## Métodos de envio (shippingMethod):
 
-| Nome           | Código         |
-| -------------- | -------------- |
-| PAC            | PAC            |
-| PAC + AR       | PAC_AR         |
-| SEDEX          | SEDEX          |
-| SEDEX + AR     | SEDEX_AR       |
-| e-SEDEX        | E_SEDEX        |
-| e-SEDEX + AR   | E_SEDEX_AR     |
-| Jamef          | JAMEF          |
-| Jadlog         | JADLOG         |
-| Minha Etiqueta | CUSTOM_LABEL   |
-| Retirada Local | LOCAL_WITHDRAW |
+| Nome             | Código          |
+| ---------------- | --------------- |
+| PAC              | PAC             |
+| PAC + AR         | PAC_AR          |
+| SEDEX            | SEDEX           |
+| SEDEX + AR       | SEDEX_AR        |
+| e-SEDEX          | E_SEDEX         |
+| e-SEDEX + AR     | E_SEDEX_AR      |
+| Jamef            | JAMEF           |
+| Jadlog Econômico | JADLOG_ECONOMIC |
+| Jadlog .com      | JADLOG_DOTCOM   |
+| Minha Etiqueta   | CUSTOM_LABEL    |
+| Retirada Local   | LOCAL_WITHDRAW  |
 
 ### Resposta (JSON)
 
