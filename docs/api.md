@@ -918,6 +918,25 @@ POST https://app.squidfacil.com.br/api/orders
 
 ### Dados variáveis
 
+**Status do pedido**
+
+| Status                                                    | Descrição                                                       |
+| --------------------------------------------------------- | --------------------------------------------------------------- |
+| On request (Em solicitação)                               | Um pedido do produto foi feito para a fábrica. *                |
+| In transit (Em trânsito)                                  | O pedido feito para fabrica está a caminho da Squid Fácil. *    |
+| Labeling (Em emissão Fiscal)                              | Aguardando a emissão da nota fiscal.                            |
+| Picking (Em separação)                                    | Separação e preparação do pedido.                               |
+| On dispatch (Em expedição)                                | Expedição do pedido.                                            |
+| Submitted (Remetido)                                      | Pedido enviado para o cliente final.                            |
+| Sent (Entregue)                                           | Pedido entregue.                                                |
+| Canceled (Cancelado)                                      | Pedido cancelado.                                               |
+| Available for withdrawal (Disponível para retirada)       | Pedido com retirada local disponível para o cliente retirar.    |
+| Awaiting item (Aguardando item)                           | Troca solicitada, aguardando produto do cliente.                |
+| Awaiting exchange (Aguardando troca)                      | Produto a ser trocado chegou na Squid Fácil, processando troca. |
+
+\* Somente pedidos de remessa normal (que não são remessa imediata) passam por esses status
+
+
 **Tipo do consumidor (consumerType):** naturalPerson ou legalPerson
 
 **Situação do contribuinte (taxpayerSituation):** 1 = Contribuinte ICMS, 2 = Contribuinte isento e 3 = Não contribuinte
