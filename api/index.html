@@ -32,7 +32,7 @@
         <meta name="lang:search.tokenizer" content="[\s\-]+">
       
       <link rel="shortcut icon" href="../assets/images/favicon.png">
-      <meta name="generator" content="mkdocs-0.17.3, mkdocs-material-2.7.2">
+      <meta name="generator" content="mkdocs-0.17.2, mkdocs-material-2.7.2">
     
     
       
@@ -2071,6 +2071,62 @@
 
 
 <h3 id="dados-variaveis">Dados variáveis</h3>
+<p><strong>Status do pedido</strong></p>
+<table>
+<thead>
+<tr>
+<th>Status</th>
+<th>Descrição</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>On request (Em solicitação)</td>
+<td>Um pedido do produto foi feito para a fábrica. *</td>
+</tr>
+<tr>
+<td>In transit (Em trânsito)</td>
+<td>O pedido feito para fabrica está a caminho da Squid Fácil. *</td>
+</tr>
+<tr>
+<td>Labeling (Em emissão Fiscal)</td>
+<td>Aguardando a emissão da nota fiscal.</td>
+</tr>
+<tr>
+<td>Picking (Em separação)</td>
+<td>Separação e preparação do pedido.</td>
+</tr>
+<tr>
+<td>On dispatch (Em expedição)</td>
+<td>Expedição do pedido.</td>
+</tr>
+<tr>
+<td>Submitted (Remetido)</td>
+<td>Pedido enviado para o cliente final.</td>
+</tr>
+<tr>
+<td>Sent (Entregue)</td>
+<td>Pedido entregue.</td>
+</tr>
+<tr>
+<td>Canceled (Cancelado)</td>
+<td>Pedido cancelado.</td>
+</tr>
+<tr>
+<td>Available for withdrawal (Disponível para retirada)</td>
+<td>Pedido com retirada local disponível para o cliente retirar.</td>
+</tr>
+<tr>
+<td>Awaiting item (Aguardando item)</td>
+<td>Troca solicitada, aguardando produto do cliente.</td>
+</tr>
+<tr>
+<td>Awaiting exchange (Aguardando troca)</td>
+<td>Produto a ser trocado chegou na Squid Fácil, processando troca.</td>
+</tr>
+</tbody>
+</table>
+<p>* Somente pedidos de remessa normal (que não são remessa imediata) passam por esses status</p>
 <p><strong>Tipo do consumidor (consumerType):</strong> naturalPerson ou legalPerson</p>
 <p><strong>Situação do contribuinte (taxpayerSituation):</strong> 1 = Contribuinte ICMS, 2 = Contribuinte isento e 3 = Não contribuinte</p>
 <h2 id="metodos-de-envio-shippingmethod">Métodos de envio (shippingMethod):</h2>
@@ -2563,7 +2619,7 @@ Veja abaixo como verificar sua URL.</p>
     
       <script src="../assets/javascripts/application.b438e6c5.js"></script>
       
-      <script>app.initialize({version:"0.17.3",url:{base:".."}})</script>
+      <script>app.initialize({version:"0.17.2",url:{base:".."}})</script>
       
     
     
