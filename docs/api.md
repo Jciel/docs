@@ -934,7 +934,7 @@ POST https://app.squidfacil.com.br/api/orders
 | Awaiting item (Aguardando item)                           | Troca solicitada, aguardando produto do cliente.                |
 | Awaiting exchange (Aguardando troca)                      | Produto a ser trocado chegou na Squid Fácil, processando troca. |
 
-\* Somente pedidos de remessa normal (que não são remessa imediata) passam por esses statu
+\* Somente pedidos de remessa normal (que não são remessa imediata) passam por esses status
 
 
 **Tipo do consumidor (consumerType):** naturalPerson ou legalPerson
