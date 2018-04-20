@@ -916,8 +916,6 @@ POST https://app.squidfacil.com.br/api/orders
 }
 ```
 
-### Dados variáveis
-
 **Status do pedido**
 
 | Status                                                    | Descrição                                                       |
@@ -936,6 +934,7 @@ POST https://app.squidfacil.com.br/api/orders
 
 \* Somente pedidos de remessa normal (que não são remessa imediata) passam por esses status
 
+### Dados variáveis
 
 **Tipo do consumidor (consumerType):** naturalPerson ou legalPerson
 
