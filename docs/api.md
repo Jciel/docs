@@ -916,7 +916,7 @@ POST https://app.squidfacil.com.br/api/orders
 }
 ```
 
-**Status do pedido**
+### Status do pedido
 
 | Status                                                    | Descrição                                                       |
 | --------------------------------------------------------- | --------------------------------------------------------------- |
