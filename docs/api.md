@@ -953,7 +953,7 @@ POST https://app.squidfacil.com.br/api/orders
 | e-SEDEX + AR     | E_SEDEX_AR      |
 | Jamef            | JAMEF           |
 | Jadlog Econômico | JADLOG_ECONOMIC |
-| Jadlog.com       | JADLOG_DOTCOM   |
+| Jadlog .com      | JADLOG_DOTCOM   |
 | Minha Etiqueta   | CUSTOM_LABEL    |
 | Retirada Local   | LOCAL_WITHDRAW  |
 
