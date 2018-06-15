@@ -879,7 +879,7 @@ GET https://app.squidfacil.com.br/api/stocks
 
 ### Cadastrar pedidos
 
-Neste endpoint é possível cadastrar um pedido no sistema da Squid Fácil. Você deve informar os dados do consumidor, lista de itens e as informações de entrega.
+Neste endpoint é possível cadastrar um pedido no sistema da Squid Fácil. Você deve informar os dados do consumidor, lista de itens, as informações de entrega e opcionalmente o id externo do pedido.
 
 ### Endpoint
 
@@ -889,6 +889,7 @@ POST https://app.squidfacil.com.br/api/orders
 
 ```json
 {
+  "externalOrderId": MEUID,
   "consumer": {
     "consumerType": "naturalPerson",
     "name": "João Silva",
@@ -1058,6 +1059,7 @@ GET https://app.squidfacil.com.br/api/orders/[order_id]
 ```json
 {
   "id": "42",
+  "externalOrderId": MEUID,
   "date": "02/09/2015 15:34:46",
   "status": "Submitted",
   "subtotal": {
@@ -1133,6 +1135,101 @@ GET https://app.squidfacil.com.br/api/orders/[order_id]
   }
 }
 ```
+
+
+### Endpoint
+
+GET https://app.squidfacil.com.br/api/orders
+
+### Parâmetros
+
+| Nome                   | Descrição                                   | Detalhes               |
+| ---------------------- | ------------------------------------------- | ---------------------- |
+| external_order_id      | Identificador externo do pedido.            | alphanumeric           |
+
+### Resposta (JSON)
+
+```json
+{
+  "id": "42",
+  "externalOrderId": MEUID,
+  "date": "02/09/2015 15:34:46",
+  "status": "Submitted",
+  "subtotal": {
+    "amount": 43131,
+    "currency": "BRL"
+  },
+  "total": {
+    "amount": 44961,
+    "currency": "BRL"
+  },
+  "shipment": {
+    "id": "SEDEX",
+    "name": "Sedex",
+    "trackingCode": null,
+    "price": {
+      "amount": 1830,
+      "currency": "BRL"
+    }
+  },
+  "store": {
+    "name": "Bob's store",
+    "platform": "Magento",
+    "url": "teste",
+    "phoneNumber": "(47) 9645-1342",
+    "mobilePhoneNumber": "(47) 9645-1341",
+    "address": {
+      "country": "Brasil",
+      "state": "SC",
+      "postalCode": "89027-450",
+      "city": "Blumenau",
+      "district": "Progresso",
+      "street": "Rua Olga Hadlich",
+      "number": "133",
+      "complement": ""
+    }
+  },
+  "consumer": {
+    "cpf": "05331700950",
+    "name": "James Woodson",
+    "email": "jameswoodson@hotmail.com",
+    "phone": "5539309999",
+    "mobilePhone": "55888888888",
+    "address": {
+      "country": "Brasil",
+      "state": "SP",
+      "postalCode": "01311300",
+      "city": "São Paulo",
+      "district": "Bela Vista",
+      "street": "Avenida Paulista",
+      "number": "100",
+      "complement": ""
+    }
+  },
+  "items": [
+    {
+      "product": "Capa Clear View Galaxy S6 Edge Dourada ",
+      "sku": "SQUID1864",
+      "quantity": 3,
+      "price": {
+        "amount": 14377,
+        "currency": "BRL"
+      },
+      "salePrice": {
+        "amount": 15600,
+        "currency": "BRL"
+      }
+    }
+  ],
+  "_links": {
+    "self": {
+      "href": "http://app.squidfacil.com.br/api/orders/42"
+    }
+  }
+}
+```
+
+
 
 ## Calcular frete
 
