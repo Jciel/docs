@@ -889,7 +889,7 @@ POST https://app.squidfacil.com.br/api/orders
 
 ```json
 {
-  "externalOrderId": MEUID,
+  "externalOrderId": "MEUID",
   "consumer": {
     "consumerType": "naturalPerson",
     "name": "João Silva",
@@ -1059,7 +1059,7 @@ GET https://app.squidfacil.com.br/api/orders/[order_id]
 ```json
 {
   "id": "42",
-  "externalOrderId": MEUID,
+  "externalOrderId": "MEUID",
   "date": "02/09/2015 15:34:46",
   "status": "Submitted",
   "subtotal": {
@@ -1152,7 +1152,7 @@ GET https://app.squidfacil.com.br/api/orders
 ```json
 {
   "id": "42",
-  "externalOrderId": MEUID,
+  "externalOrderId": "MEUID",
   "date": "02/09/2015 15:34:46",
   "status": "Submitted",
   "subtotal": {
